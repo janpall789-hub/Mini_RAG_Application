@@ -1,0 +1,214 @@
+Generative AI & Large Language Models (LLMs)
+
+1. Transformer Architecture and Self-Attention
+Transformers utilize multi-head self-attention mechanisms to compute dependencies between words across entire sequences in parallel, replacing sequential RNN processing.
+
+2. Retrieval-Augmented Generation (RAG)
+RAG combines pre-trained parametric memory (LLM weights) with non-parametric external vector stores to ground generated outputs in factual, domain-specific contexts.
+
+3. Vector Embeddings and Distance Metrics
+High-dimensional dense vectors represent semantic context. Common similarity metrics include Cosine Similarity, Dot Product, and Euclidean Distance (L2).
+
+
+# Generative AI & Large Language Models (LLMs)
+
+## 1. What is Artificial Intelligence?
+
+**Artificial Intelligence (AI)** is a field of computer science that focuses on building systems capable of performing tasks that normally require human intelligence.
+
+Examples include:
+
+* Understanding language
+* Recognizing images
+* Making predictions
+* Recommending products
+* Understanding speech
+* Solving problems
+* Making decisions
+
+AI is used in healthcare, banking, education, manufacturing, e-commerce, cybersecurity, transportation, and many other industries.
+
+---
+
+# 2. What is Generative AI?
+
+**Generative AI** is a branch of artificial intelligence that can create new content based on patterns learned from existing data.
+
+It can generate:
+
+* Text
+* Images
+* Code
+* Audio
+* Video
+* Music
+* Summaries
+* Documents
+* Conversational responses
+
+For example, a user can provide a prompt such as:
+
+> "Explain machine learning to a beginner."
+
+A Generative AI model can create a new explanation based on the patterns it learned during training.
+
+---
+
+# 3. Traditional AI vs Generative AI
+
+Traditional AI is often designed to **classify, predict, or make decisions**.
+
+For example:
+
+**Input:** Email
+**Output:** Spam or Not Spam
+
+Generative AI can create new content.
+
+**Input:** "Write an email requesting leave."
+**Output:** A newly generated email.
+
+Therefore, traditional AI commonly focuses on prediction or classification, while Generative AI focuses on producing new content.
+
+---
+
+# 4. What is an LLM?
+
+**LLM stands for Large Language Model.**
+
+An LLM is a machine learning model trained on a large amount of text data. It learns patterns in language and can generate text based on an input prompt.
+
+LLMs can perform tasks such as:
+
+* Question answering
+* Summarization
+* Translation
+* Text generation
+* Code generation
+* Information extraction
+* Classification
+* Conversational assistance
+* Reasoning-style problem solving
+
+Examples of LLM-based systems include ChatGPT and other modern language-model applications.
+
+---
+
+# 5. How Does an LLM Work?
+
+A simplified LLM workflow is:
+
+**User Prompt → Tokenization → Model Processing → Next-Token Prediction → Generated Response**
+
+For example:
+
+```text
+Prompt:
+"Python is a"
+
+Possible prediction:
+"programming"
+
+The model continues predicting tokens
+until it generates the response.
+```
+
+LLMs generally generate text by repeatedly predicting suitable next tokens based on the context.
+
+---
+
+# 6. What is a Token?
+
+A **token** is a unit of text processed by a language model.
+
+A token may represent:
+
+* A complete word
+* Part of a word
+* Punctuation
+* A symbol
+
+For example:
+
+```text
+"Generative AI is powerful."
+```
+
+is broken into tokens according to the tokenizer used by the model.
+
+Tokens are important because language models have limits and pricing that are often measured in tokens.
+
+---
+
+# 7. What is a Transformer?
+
+Modern LLMs commonly use the **Transformer architecture**.
+
+Transformers use mechanisms such as **attention** to determine which parts of the input are important when processing a sequence.
+
+A simplified architecture is:
+
+```text
+Text
+ ↓
+Tokenizer
+ ↓
+Token Embeddings
+ ↓
+Transformer Layers
+ ↓
+Attention
+ ↓
+Language Modeling
+ ↓
+Output Tokens
+```
+
+---
+
+# 8. What is Attention?
+
+**Attention** allows a model to determine how strongly different tokens should relate to one another when processing a sequence.
+
+For example, in:
+
+```text
+"Rahul gave the book to his friend because he needed it."
+```
+
+understanding what words such as "he" and "it" refer to requires considering surrounding context.
+
+Attention helps models process relationships between tokens.
+
+---
+
+# 9. What are Embeddings?
+
+An **embedding** is a numerical representation of information.
+
+Text can be converted into vectors:
+
+```text
+Text
+ ↓
+Embedding Model
+ ↓
+Vector
+```
+
+Semantically similar pieces of text tend to have similar vector representations.
+
+Embeddings are widely used in:
+
+* Semantic search
+* Recommendation systems
+* Document retrieval
+* RAG applications
+* Clustering
+* Classification
+
+---
+
+# 10. What is Prompt Engineering?
+
+**Prompt engineering** is the practice of designing instructions that guide an AI model toward a desired ou

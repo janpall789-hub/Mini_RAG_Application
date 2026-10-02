@@ -1,0 +1,131 @@
+Database Management Systems (DBMS) - Technical Overview
+
+1. What is ACID compliance in relational databases?
+ACID stands for Atomicity, Consistency, Isolation, and Durability.
+- Atomicity: Guarantees that all operations within a work unit are completed successfully; otherwise, the transaction is aborted.
+- Consistency: Ensures that the database properly changes states upon a successfully committed transaction.
+- Isolation: Enables transactions to operate independently of and transparent to each other.
+- Durability: Ensures that the result or effect of a committed transaction persists even in case of a system failure.
+
+2. Explain the difference between B-Trees and Hash Indexes.
+- B-Trees support range queries and equality comparisons with O(log N) time complexity.
+- Hash Indexes provide O(1) average-time complexity for exact match equality queries but do not support range scans.
+
+3. Normalization vs Denormalization
+Normalization reduces data redundancy and improves data integrity by splitting tables into smaller, linked tables (1NF to 3NF/BCNF).
+Denormalization optimizes read performance by combining tables and introducing redundancy.
+
+# DBMS (Database Management System) – Basics
+
+A **Database Management System (DBMS)** is software used to create, store, organize, manage, and retrieve data from a database. It provides an interface between users/applications and the database. Popular DBMS software includes **MySQL, PostgreSQL, Oracle Database, Microsoft SQL Server, and SQLite**.
+
+### 1. What is a Database?
+
+A **database** is an organized collection of related data. For example, a college database may contain student names, roll numbers, courses, marks, and attendance.
+
+### 2. What is DBMS?
+
+A DBMS allows users to perform operations such as:
+
+* Creating databases and tables
+* Inserting data
+* Updating existing data
+* Deleting data
+* Searching and retrieving data
+* Managing users and permissions
+* Maintaining data security and consistency
+
+### 3. Types of DBMS
+
+The major types are:
+
+**Hierarchical DBMS:** Data is organized in a tree-like structure.
+
+**Network DBMS:** Data is organized using relationships between records.
+
+**Relational DBMS (RDBMS):** Data is stored in tables consisting of rows and columns. MySQL, PostgreSQL, Oracle, and SQL Server are examples.
+
+**NoSQL DBMS:** Designed for flexible or large-scale data, including document, key-value, graph, and wide-column databases. MongoDB and Redis are examples.
+
+### 4. Table, Row, and Column
+
+In a relational database, information is stored in **tables**.
+
+* **Table:** Collection of related data.
+* **Row/Record:** Represents one complete data item.
+* **Column/Field:** Represents a specific attribute.
+
+For example, a `Student` table may contain:
+
+`Student_ID | Name | Age | Course`
+
+Each student is represented by one row.
+
+### 5. Keys
+
+Keys help identify and connect records.
+
+**Primary Key:** Uniquely identifies each record and cannot normally contain NULL values.
+
+**Foreign Key:** References a key in another table and establishes a relationship between tables.
+
+**Candidate Key:** A column or combination of columns that can uniquely identify a record.
+
+### 6. SQL
+
+**SQL (Structured Query Language)** is commonly used with relational databases.
+
+Examples:
+
+```sql
+SELECT * FROM Students;
+```
+
+Retrieves records.
+
+```sql
+INSERT INTO Students VALUES (101, 'Rahul', 21, 'BTech');
+```
+
+Adds a record.
+
+```sql
+UPDATE Students SET Age = 22 WHERE Student_ID = 101;
+```
+
+Updates a record.
+
+```sql
+DELETE FROM Students WHERE Student_ID = 101;
+```
+
+Deletes a record.
+
+### 7. Normalization
+
+**Normalization** is the process of organizing database data to reduce unnecessary duplication and improve consistency. Common normal forms include **1NF, 2NF, and 3NF**.
+
+### 8. Relationships
+
+Tables can have different relationships:
+
+* **One-to-One:** One record relates to one record.
+* **One-to-Many:** One record relates to multiple records.
+* **Many-to-Many:** Multiple records relate to multiple records.
+
+### 9. Transactions and ACID
+
+A **transaction** is a group of database operations treated as one logical unit.
+
+ACID properties are:
+
+* **Atomicity:** All operations succeed or the transaction is rolled back.
+* **Consistency:** Data remains valid according to defined rules.
+* **Isolation:** Concurrent transactions are controlled so they do not improperly interfere.
+* **Durability:** Committed changes remain stored even after failures.
+
+### 10. Advantages of DBMS
+
+DBMS provides **data security, reduced redundancy, data consistency, controlled access, backup and recovery, concurrent access, and efficient data retrieval**.
+
+In short, a DBMS is an essential technology for managing structured data efficiently. It is widely used in **banking, education, healthcare, e-commerce, social media, government systems, and software applications**.

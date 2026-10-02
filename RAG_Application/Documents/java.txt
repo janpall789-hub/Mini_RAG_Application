@@ -1,0 +1,224 @@
+Java Programming Language - Enterprise & Core Architecture
+
+1. Java Virtual Machine (JVM) Architecture
+The JVM consists of three main sub-systems:
+- ClassLoader: Loads, links, and initializes class files.
+- Memory Area: Divided into Heap, Stack, Method Area, PC Registers, and Native Method Stacks.
+- Execution Engine: Contains the Interpreter, JIT Compiler, and Garbage Collector.
+
+2. Garbage Collection Algorithms
+Java utilizes generational garbage collection (Young Generation, Old Generation, Metaspace) with algorithms like G1GC, ZGC, and Parallel GC to minimize stop-the-world pauses.
+
+3. Concurrent Programming: CompletableFuture and ExecutorService
+Java provides `ExecutorService` for thread pool management and `CompletableFuture` for asynchronous, non-blocking programming models.
+
+# Java Programming Language – Enterprise & Core Architecture
+
+## 1. What is Java?
+
+Java is a **high-level, object-oriented, general-purpose programming language** developed by Sun Microsystems. Today, Java is widely used for web applications, enterprise software, Android-related development, backend systems, banking applications, cloud applications, and large-scale business systems.
+
+The main idea behind Java is **“Write Once, Run Anywhere.”** Java programs are compiled into **bytecode**, which can run on different operating systems using the **Java Virtual Machine (JVM)**.
+
+---
+
+## 2. Java Architecture
+
+Java mainly works through three important components:
+
+### JDK – Java Development Kit
+
+JDK is used by developers to **create and compile Java programs**.
+
+It contains:
+
+* Java compiler (`javac`)
+* Java launcher
+* Debugging and development tools
+* JRE components
+
+### JRE – Java Runtime Environment
+
+JRE provides the environment required to **run Java applications**.
+
+### JVM – Java Virtual Machine
+
+JVM executes Java bytecode and provides platform independence.
+
+The basic flow is:
+
+**Java Source Code → Compiler → Bytecode → JVM → Output**
+
+Example:
+
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello Students!");
+    }
+}
+```
+
+Save the file as `HelloWorld.java`.
+
+Compile:
+
+```bash
+javac HelloWorld.java
+```
+
+Run:
+
+```bash
+java HelloWorld
+```
+
+---
+
+## 3. Core Java Concepts
+
+Students should first learn the fundamentals before moving into enterprise development.
+
+### Variables
+
+Variables store data.
+
+```java
+int age = 20;
+String name = "Rahul";
+```
+
+### Data Types
+
+Common Java data types include:
+
+* `int` – integer numbers
+* `double` – decimal numbers
+* `char` – single character
+* `boolean` – true/false
+* `String` – text
+
+### Operators
+
+Java supports arithmetic, relational, logical, assignment, and other operators.
+
+```java
+int a = 10;
+int b = 20;
+
+System.out.println(a + b);
+```
+
+### Conditions
+
+```java
+if (age >= 18) {
+    System.out.println("Eligible");
+} else {
+    System.out.println("Not Eligible");
+}
+```
+
+### Loops
+
+Loops are used to repeat instructions.
+
+```java
+for (int i = 1; i <= 5; i++) {
+    System.out.println(i);
+}
+```
+
+---
+
+## 4. Object-Oriented Programming
+
+Java strongly uses **Object-Oriented Programming (OOP)**.
+
+The four major OOP concepts are:
+
+1. **Encapsulation** – combining data and methods inside a class.
+2. **Inheritance** – allowing one class to acquire properties of another class.
+3. **Polymorphism** – allowing the same method or interface to have different implementations.
+4. **Abstraction** – hiding unnecessary implementation details.
+
+Example:
+
+```java
+class Student {
+    String name;
+
+    void display() {
+        System.out.println(name);
+    }
+}
+```
+
+---
+
+## 5. Important Core Java Topics
+
+After learning the basics, students should study:
+
+* Classes and Objects
+* Constructors
+* Methods
+* Inheritance
+* Interfaces
+* Abstract Classes
+* Exception Handling
+* Arrays
+* Strings
+* Collections
+* Generics
+* File Handling
+* Multithreading
+* Lambda Expressions
+* Stream API
+* JDBC
+
+These concepts build a strong foundation for professional Java development.
+
+---
+
+## 6. Java in Enterprise Development
+
+Java is widely used for **enterprise backend applications**. Enterprise applications often need security, scalability, database connectivity, APIs, authentication, transactions, and reliable business logic.
+
+Popular technologies include:
+
+* **Spring Framework**
+* **Spring Boot**
+* **Spring MVC**
+* **Spring Data JPA**
+* **Hibernate**
+* **JDBC**
+* REST APIs
+* Microservices
+
+A common enterprise architecture is:
+
+**Client → REST API → Controller → Service → Repository → Database**
+
+For example, a banking application may use Java and Spring Boot to handle users, accounts, transactions, authentication, and database operations.
+
+---
+
+## 7. Student Learning Roadmap
+
+Students should learn Java in this order:
+
+**Java Basics → OOP → Collections → Exception Handling → File Handling → JDBC → SQL → REST APIs → Spring Boot → Hibernate/JPA → Microservices**
+
+Start with small projects such as:
+
+* Student Management System
+* Calculator
+* Banking Application
+* Library Management System
+* Employee Management System
+* REST API
+
+### Final Guidance
+
+Do not try to learn Spring Boot or enterprise architecture immediately. First become comfortable with **Java syntax, problem-solving, OOP, collections, exceptions, and SQL**. Once your Core Java foundation is strong, enterprise frameworks such as Spring Boot become much easier to understand.

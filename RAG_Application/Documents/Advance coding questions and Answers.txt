@@ -1,0 +1,201 @@
+# Advanced Coding Questions and Answers
+
+### 1. What is time complexity?
+
+**Answer:** Time complexity describes how the running time of an algorithm grows as the input size increases.
+
+### 2. What is space complexity?
+
+**Answer:** Space complexity describes how much additional memory an algorithm requires as the input size grows.
+
+### 3. What is Big-O notation?
+
+**Answer:** Big-O notation describes the upper-bound growth rate of an algorithm's time or space requirements.
+
+### 4. What is recursion?
+
+**Answer:** Recursion is a programming technique where a function calls itself to solve smaller instances of a problem.
+
+### 5. What is dynamic programming?
+
+**Answer:** Dynamic programming solves complex problems by dividing them into overlapping subproblems and storing their results for reuse.
+
+### 6. What is memoization?
+
+**Answer:** Memoization stores the results of expensive function calls so that the same calculations do not need to be repeated.
+
+### 7. What is tabulation?
+
+**Answer:** Tabulation is a bottom-up dynamic programming technique that fills a table with solutions to smaller subproblems.
+
+### 8. What is a hash table?
+
+**Answer:** A hash table stores key-value pairs and uses a hash function to efficiently locate values.
+
+### 9. What is hashing?
+
+**Answer:** Hashing converts input data into a fixed-size value called a hash, which can be used for efficient lookup.
+
+### 10. What is collision in hashing?
+
+**Answer:** A collision occurs when two different keys produce the same hash value. Techniques such as chaining and open addressing can handle collisions.
+
+### 11. What is a stack?
+
+**Answer:** A stack is a linear data structure that follows the LIFO principle: Last In, First Out.
+
+### 12. What is a queue?
+
+**Answer:** A queue is a linear data structure that follows FIFO: First In, First Out.
+
+### 13. What is a priority queue?
+
+**Answer:** A priority queue stores elements according to priority, allowing the highest- or lowest-priority element to be accessed efficiently.
+
+### 14. What is a heap?
+
+**Answer:** A heap is a tree-based data structure that satisfies a heap-order property. It is commonly used to implement priority queues.
+
+### 15. What is a binary tree?
+
+**Answer:** A binary tree is a tree in which each node can have at most two children.
+
+### 16. What is a binary search tree?
+
+**Answer:** A binary search tree organizes values so that values on one side of a node are smaller and values on the other side are larger, according to the tree's ordering rule.
+
+### 17. What is tree traversal?
+
+**Answer:** Tree traversal is the process of visiting every node in a tree. Common methods include preorder, inorder, postorder, and level-order traversal.
+
+### 18. What is inorder traversal?
+
+**Answer:** Inorder traversal visits the left subtree, the current node, and then the right subtree. In a valid BST, it produces values in sorted order.
+
+### 19. What is a balanced tree?
+
+**Answer:** A balanced tree maintains its height close to logarithmic relative to the number of nodes, helping keep operations efficient.
+
+### 20. What is an AVL tree?
+
+**Answer:** An AVL tree is a self-balancing binary search tree that maintains a height difference of at most one between the left and right subtrees of each node.
+
+### 21. What is a graph?
+
+**Answer:** A graph is a data structure consisting of vertices and edges that represent relationships between entities.
+
+### 22. What is BFS?
+
+**Answer:** Breadth-First Search explores a graph level by level and commonly uses a queue.
+
+### 23. What is DFS?
+
+**Answer:** Depth-First Search explores one path as deeply as possible before backtracking. It can be implemented using recursion or a stack.
+
+### 24. What is Dijkstra's algorithm?
+
+**Answer:** Dijkstra's algorithm finds shortest paths from a source vertex in a graph with non-negative edge weights.
+
+### 25. What is a minimum spanning tree?
+
+**Answer:** A minimum spanning tree connects all vertices of a connected weighted graph with the minimum possible total edge weight and no cycles.
+
+### 26. What is Kruskal's algorithm?
+
+**Answer:** Kruskal's algorithm constructs a minimum spanning tree by repeatedly selecting the smallest available edge that does not create a cycle.
+
+### 27. What is Prim's algorithm?
+
+**Answer:** Prim's algorithm constructs a minimum spanning tree by repeatedly adding the minimum-weight edge that connects the growing tree to a new vertex.
+
+### 28. What is merge sort?
+
+**Answer:** Merge sort divides an array into smaller parts, sorts them, and merges the sorted parts. Its typical time complexity is O(n log n).
+
+### 29. What is quicksort?
+
+**Answer:** Quicksort selects a pivot, partitions the data around it, and recursively sorts the resulting partitions. Its average time complexity is O(n log n).
+
+### 30. What is binary search?
+
+**Answer:** Binary search repeatedly divides a sorted search range in half. Its typical time complexity is O(log n).
+
+### 31. What is backtracking?
+
+**Answer:** Backtracking builds a solution incrementally and abandons a partial solution when it cannot lead to a valid complete solution.
+
+### 32. What is a greedy algorithm?
+
+**Answer:** A greedy algorithm repeatedly chooses what appears to be the best local option. Greedy strategies are correct only for problems with suitable properties.
+
+### 33. What is divide and conquer?
+
+**Answer:** Divide and conquer divides a problem into smaller independent subproblems, solves them, and combines their results.
+
+### 34. What is an algorithm?
+
+**Answer:** An algorithm is a finite sequence of well-defined steps used to solve a problem or perform a computation.
+
+### 35. What is an API?
+
+**Answer:** An API, or Application Programming Interface, defines how different software components communicate with each other.
+
+### 36. What is REST API?
+
+**Answer:** A REST API is an HTTP-based interface that commonly uses resources and standard HTTP methods such as GET, POST, PUT, PATCH, and DELETE.
+
+### 37. What is JSON?
+
+**Answer:** JSON stands for JavaScript Object Notation. It is a lightweight text format commonly used for exchanging structured data.
+
+### 38. What is asynchronous programming?
+
+**Answer:** Asynchronous programming allows a program to start an operation and continue other work while waiting for the operation to complete.
+
+### 39. What is concurrency?
+
+**Answer:** Concurrency is the ability of a system to manage multiple tasks whose execution periods overlap.
+
+### 40. What is parallelism?
+
+**Answer:** Parallelism means executing multiple computations at the same time, typically using multiple CPU cores or processing units.
+
+### 41. What is multithreading?
+
+**Answer:** Multithreading allows multiple threads within a process to execute concurrently.
+
+### 42. What is a race condition?
+
+**Answer:** A race condition occurs when the result of a program depends on the unpredictable timing or ordering of concurrent operations.
+
+### 43. What is a deadlock?
+
+**Answer:** A deadlock occurs when two or more processes or threads wait indefinitely for resources held by one another.
+
+### 44. What is caching?
+
+**Answer:** Caching stores frequently accessed data in a faster storage layer so future requests can be served more quickly.
+
+### 45. What is a database index?
+
+**Answer:** A database index is a data structure that improves the speed of data retrieval operations, usually at the cost of additional storage and update overhead.
+
+### 46. What is normalization?
+
+**Answer:** Database normalization organizes data into related tables to reduce unnecessary duplication and improve consistency.
+
+### 47. What is unit testing?
+
+**Answer:** Unit testing tests individual functions, methods, or components in isolation to verify their expected behavior.
+
+### 48. What is exception handling?
+
+**Answer:** Exception handling is a mechanism for detecting and managing runtime errors without unnecessarily terminating the entire program.
+
+### 49. What is clean code?
+
+**Answer:** Clean code is code that is readable, understandable, maintainable, and structured with clear naming and appropriate abstractions.
+
+### 50. What is software design pattern?
+
+**Answer:** A design pattern is a reusable, general solution to a commonly occurring software design problem. Examples include Singleton, Factory, Observer, and Strategy patterns.
