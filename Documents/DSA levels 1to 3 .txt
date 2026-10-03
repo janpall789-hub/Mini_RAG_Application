@@ -1,0 +1,1226 @@
+Data Structures and Algorithms - Levels 1 to 3 Roadmap
+
+Level 1: Basic Foundations
+- Linear Data Structures: Arrays, Strings, Linked Lists, Stacks, Queues.
+- Basic Algorithms: Linear Search, Binary Search, Bubble/Insertion/Selection Sort.
+- Time & Space Complexity: Big-O notation, Big-Theta, Big-Omega.
+
+Level 2: Intermediate Data Structures & Algorithmic Patterns
+- Trees & Graphs: Binary Trees, Binary Search Trees (BST), Graph Representations (Adjacency Matrix/List).
+- Traversal Strategies: Breadth-First Search (BFS), Depth-First Search (DFS).
+- Core Techniques: Two Pointers, Sliding Window, Recursion, Backtracking.
+
+Level 3: Advanced Optimization & Complex Structures
+- Advanced Graphs: Dijkstra's, Bellman-Ford, Floyd-Warshall, Topological Sort, Disjoint Set Union (DSU).
+- Dynamic Programming: Memoization (Top-down), Tabulation (Bottom-up), Knapsack, LCS.
+- Advanced Trees: Tries, Segment Trees, Fenwick Trees (Binary Indexed Trees).
+
+# Data Structures and Algorithms – Level 1
+
+## 40 Basic Coding Problems and Answers
+
+### 1. Find the largest element in an array
+
+**Question:** Find the largest number in an array.
+
+**Answer:** Traverse the array and maintain a variable containing the largest value found so far.
+
+**Example:** `[10, 25, 7, 40, 15]` → `40`
+
+---
+
+### 2. Find the smallest element in an array
+
+**Question:** Find the smallest number in an array.
+
+**Answer:** Traverse the array and continuously update the minimum value.
+
+**Example:** `[10, 25, 7, 40, 15]` → `7`
+
+---
+
+### 3. Find the sum of array elements
+
+**Question:** Calculate the sum of all elements in an array.
+
+**Answer:** Initialize `sum = 0` and add every element to it.
+
+**Example:** `[1, 2, 3, 4, 5]` → `15`
+
+---
+
+### 4. Find the average of an array
+
+**Question:** Find the average of all numbers in an array.
+
+**Answer:** Divide the sum of all elements by the number of elements.
+
+**Example:** `[10, 20, 30]` → `20`
+
+---
+
+### 5. Reverse an array
+
+**Question:** Reverse the elements of an array.
+
+**Answer:** Use two pointers, one at the beginning and one at the end, and swap elements until they meet.
+
+**Example:** `[1, 2, 3, 4]` → `[4, 3, 2, 1]`
+
+---
+
+### 6. Search for an element
+
+**Question:** Check whether a given element exists in an array.
+
+**Answer:** Traverse the array and compare each element with the target.
+
+**Example:** Search `5` in `[2, 5, 8]` → Found.
+
+---
+
+### 7. Count even numbers
+
+**Question:** Count the number of even elements in an array.
+
+**Answer:** Traverse the array and increment a counter whenever `number % 2 == 0`.
+
+**Example:** `[1, 2, 4, 7, 8]` → `3`
+
+---
+
+### 8. Count odd numbers
+
+**Question:** Count the number of odd elements in an array.
+
+**Answer:** Traverse the array and increment a counter for every odd number.
+
+**Example:** `[1, 2, 4, 7, 8]` → `2`
+
+---
+
+### 9. Find the second largest element
+
+**Question:** Find the second largest distinct element in an array.
+
+**Answer:** Track the largest and second-largest distinct values while traversing the array.
+
+**Example:** `[10, 20, 5, 30, 15]` → `20`
+
+---
+
+### 10. Remove duplicates from an array
+
+**Question:** Remove duplicate elements from an array.
+
+**Answer:** Use a set or another appropriate data structure to keep only unique values.
+
+**Example:** `[1, 2, 2, 3, 3]` → `[1, 2, 3]`
+
+---
+
+### 11. Check whether an array is sorted
+
+**Question:** Determine whether an array is sorted in ascending order.
+
+**Answer:** Compare every element with the element immediately after it.
+
+**Example:** `[1, 2, 3, 4]` → Sorted.
+
+---
+
+### 12. Count positive numbers
+
+**Question:** Count positive numbers in an array.
+
+**Answer:** Traverse the array and increment a counter whenever the element is greater than zero.
+
+---
+
+### 13. Count negative numbers
+
+**Question:** Count negative numbers in an array.
+
+**Answer:** Traverse the array and count elements smaller than zero.
+
+---
+
+### 14. Find the frequency of an element
+
+**Question:** Count how many times a particular number occurs.
+
+**Answer:** Traverse the array and increment the counter whenever the element equals the target.
+
+**Example:** `[2, 3, 2, 5, 2]`, target `2` → `3`
+
+---
+
+### 15. Find duplicate elements
+
+**Question:** Find elements that occur more than once.
+
+**Answer:** Use a set to track visited elements and identify repeated values.
+
+---
+
+### 16. Linear Search
+
+**Question:** Implement linear search.
+
+**Answer:** Check each element sequentially until the target is found.
+
+**Time Complexity:** `O(n)`
+
+---
+
+### 17. Binary Search
+
+**Question:** Search for an element in a sorted array using binary search.
+
+**Answer:** Repeatedly compare the target with the middle element and eliminate half of the search space.
+
+**Time Complexity:** `O(log n)`
+
+---
+
+### 18. Swap two numbers
+
+**Question:** Swap two numbers without changing their values incorrectly.
+
+**Answer:** Use a temporary variable or a language-supported multiple assignment operation.
+
+**Example:** `a = 10, b = 20` → `a = 20, b = 10`
+
+---
+
+### 19. Find the factorial of a number
+
+**Question:** Calculate `n!`.
+
+**Answer:** Multiply all integers from `1` to `n`.
+
+**Example:** `5! = 120`
+
+---
+
+### 20. Generate Fibonacci numbers
+
+**Question:** Generate the first `n` Fibonacci numbers.
+
+**Answer:** Start with `0` and `1`, then calculate each next value as the sum of the previous two.
+
+**Example:** `0, 1, 1, 2, 3, 5, 8`
+
+---
+
+### 21. Check whether a number is prime
+
+**Question:** Determine whether a number is prime.
+
+**Answer:** Check whether the number has any divisor other than `1` and itself. Testing divisors up to the square root is sufficient.
+
+**Example:** `7` → Prime.
+
+---
+
+### 22. Reverse a number
+
+**Question:** Reverse the digits of an integer.
+
+**Answer:** Repeatedly extract the last digit and append it to the reversed number.
+
+**Example:** `12345` → `54321`
+
+---
+
+### 23. Check palindrome number
+
+**Question:** Check whether a number reads the same forward and backward.
+
+**Answer:** Reverse the number and compare it with the original.
+
+**Example:** `121` → Palindrome.
+
+---
+
+### 24. Find the sum of digits
+
+**Question:** Find the sum of all digits of a number.
+
+**Answer:** Extract each digit and add it to a running total.
+
+**Example:** `1234` → `10`
+
+---
+
+### 25. Count digits
+
+**Question:** Count the number of digits in an integer.
+
+**Answer:** Repeatedly divide the number by `10` until it becomes zero.
+
+**Example:** `12345` → `5 digits`
+
+---
+
+### 26. Check palindrome string
+
+**Question:** Determine whether a string is a palindrome.
+
+**Answer:** Compare the string with its reverse.
+
+**Example:** `"madam"` → Palindrome.
+
+---
+
+### 27. Reverse a string
+
+**Question:** Reverse a given string.
+
+**Answer:** Read characters from the end toward the beginning.
+
+**Example:** `"hello"` → `"olleh"`
+
+---
+
+### 28. Count vowels
+
+**Question:** Count vowels in a string.
+
+**Answer:** Traverse the string and count characters belonging to `a, e, i, o, u`.
+
+**Example:** `"education"` → `5`
+
+---
+
+### 29. Count characters
+
+**Question:** Count the number of characters in a string.
+
+**Answer:** Use the string length or manually count each character.
+
+---
+
+### 30. Find duplicate characters
+
+**Question:** Find characters that occur more than once in a string.
+
+**Answer:** Use a frequency map or dictionary to count each character.
+
+**Example:** `"programming"` → repeated characters include `r`, `g`, and `m`.
+
+---
+
+### 31. Check whether two strings are anagrams
+
+**Question:** Determine whether two strings contain the same characters with the same frequencies.
+
+**Answer:** Compare their character-frequency maps or sorted forms.
+
+**Example:** `"listen"` and `"silent"` → Anagrams.
+
+---
+
+### 32. Implement a stack
+
+**Question:** Create a basic stack.
+
+**Answer:** A stack supports operations such as `push`, `pop`, and `peek`.
+
+**Principle:** LIFO — Last In, First Out.
+
+---
+
+### 33. Implement a queue
+
+**Question:** Create a basic queue.
+
+**Answer:** A queue supports operations such as insertion at the rear and removal from the front.
+
+**Principle:** FIFO — First In, First Out.
+
+---
+
+### 34. Check balanced parentheses
+
+**Question:** Determine whether parentheses are balanced.
+
+**Answer:** Use a stack. Push opening brackets and remove the matching opening bracket when a closing bracket is encountered.
+
+**Example:** `"({[]})"` → Balanced.
+
+---
+
+### 35. Find the maximum of two numbers
+
+**Question:** Find the larger of two numbers.
+
+**Answer:** Compare the two values using a conditional statement.
+
+**Example:** `10, 25` → `25`
+
+---
+
+### 36. Find the maximum of three numbers
+
+**Question:** Find the largest among three numbers.
+
+**Answer:** Compare the values using conditions or a built-in maximum operation.
+
+**Example:** `10, 45, 25` → `45`
+
+---
+
+### 37. Sort an array
+
+**Question:** Sort an array in ascending order.
+
+**Answer:** Use a sorting algorithm such as bubble sort for learning purposes or an efficient built-in sorting method in production.
+
+**Example:** `[5, 2, 8, 1]` → `[1, 2, 5, 8]`
+
+---
+
+### 38. Bubble Sort
+
+**Question:** Implement Bubble Sort.
+
+**Answer:** Repeatedly compare adjacent elements and swap them when they are in the wrong order.
+
+**Time Complexity:** `O(n²)` in the average and worst cases.
+
+---
+
+### 39. Find the missing number
+
+**Question:** An array contains numbers from `1` to `n` with one number missing. Find the missing number.
+
+**Answer:** Calculate the expected sum `n(n+1)/2` and subtract the actual array sum.
+
+**Example:** `[1, 2, 4, 5]` → Missing number is `3`.
+
+---
+
+### 40. Find common elements
+
+**Question:** Find elements common to two arrays.
+
+**Answer:** Use a set or frequency structure to efficiently identify values present in both arrays.
+
+**Example:** `[1, 2, 3, 4]` and `[3, 4, 5, 6]` → `[3, 4]`
+
+## Level 1 Topics Covered
+
+* Arrays
+* Strings
+* Searching
+* Sorting
+* Numbers
+* Recursion basics
+* Stack
+* Queue
+* Hashing basics
+* Frequency counting
+* Basic problem-solving
+* Time complexity fundamentals
+
+ANSWERS CODING :  
+
+# DSA Level 1 – Basic Coding Problems with Python Answers
+
+## 1. Find the Largest Element
+
+**Question:** Find the largest element in an array.
+
+**Answer:**
+
+```python
+arr = [10, 25, 7, 40, 15]
+
+largest = arr[0]
+
+for num in arr:
+    if num > largest:
+        largest = num
+
+print(largest)
+```
+
+**Output:**
+
+```text
+40
+```
+
+---
+
+## 2. Find the Smallest Element
+
+```python
+arr = [10, 25, 7, 40, 15]
+
+smallest = arr[0]
+
+for num in arr:
+    if num < smallest:
+        smallest = num
+
+print(smallest)
+```
+
+**Output:** `7`
+
+---
+
+## 3. Find Sum of Array Elements
+
+```python
+arr = [1, 2, 3, 4, 5]
+
+total = 0
+
+for num in arr:
+    total += num
+
+print(total)
+```
+
+**Output:** `15`
+
+---
+
+## 4. Find Average of an Array
+
+```python
+arr = [10, 20, 30]
+
+total = sum(arr)
+average = total / len(arr)
+
+print(average)
+```
+
+**Output:** `20.0`
+
+---
+
+## 5. Reverse an Array
+
+```python
+arr = [1, 2, 3, 4, 5]
+
+arr.reverse()
+
+print(arr)
+```
+
+**Output:**
+
+```text
+[5, 4, 3, 2, 1]
+```
+
+---
+
+## 6. Search for an Element
+
+```python
+arr = [10, 20, 30, 40]
+target = 30
+
+found = False
+
+for num in arr:
+    if num == target:
+        found = True
+        break
+
+print("Found" if found else "Not Found")
+```
+
+**Output:** `Found`
+
+---
+
+## 7. Count Even Numbers
+
+```python
+arr = [1, 2, 4, 7, 8]
+
+count = 0
+
+for num in arr:
+    if num % 2 == 0:
+        count += 1
+
+print(count)
+```
+
+**Output:** `3`
+
+---
+
+## 8. Count Odd Numbers
+
+```python
+arr = [1, 2, 4, 7, 8]
+
+count = 0
+
+for num in arr:
+    if num % 2 != 0:
+        count += 1
+
+print(count)
+```
+
+**Output:** `2`
+
+---
+
+## 9. Find Second Largest Element
+
+```python
+arr = [10, 20, 5, 30, 15]
+
+unique_values = list(set(arr))
+unique_values.sort()
+
+print(unique_values[-2])
+```
+
+**Output:** `20`
+
+---
+
+## 10. Remove Duplicates
+
+```python
+arr = [1, 2, 2, 3, 3, 4]
+
+result = list(set(arr))
+
+print(result)
+```
+
+**Output:**
+
+```text
+[1, 2, 3, 4]
+```
+
+---
+
+## 11. Check if Array is Sorted
+
+```python
+arr = [1, 2, 3, 4, 5]
+
+is_sorted = True
+
+for i in range(len(arr) - 1):
+    if arr[i] > arr[i + 1]:
+        is_sorted = False
+        break
+
+print(is_sorted)
+```
+
+**Output:** `True`
+
+---
+
+## 12. Count Positive Numbers
+
+```python
+arr = [-2, 5, 7, -1, 0, 10]
+
+count = 0
+
+for num in arr:
+    if num > 0:
+        count += 1
+
+print(count)
+```
+
+**Output:** `3`
+
+---
+
+## 13. Count Negative Numbers
+
+```python
+arr = [-2, 5, 7, -1, 0, -10]
+
+count = 0
+
+for num in arr:
+    if num < 0:
+        count += 1
+
+print(count)
+```
+
+**Output:** `3`
+
+---
+
+## 14. Find Frequency of an Element
+
+```python
+arr = [2, 3, 2, 5, 2]
+target = 2
+
+count = 0
+
+for num in arr:
+    if num == target:
+        count += 1
+
+print(count)
+```
+
+**Output:** `3`
+
+---
+
+## 15. Find Duplicate Elements
+
+```python
+arr = [1, 2, 3, 2, 4, 3, 5]
+
+duplicates = []
+
+for num in arr:
+    if arr.count(num) > 1 and num not in duplicates:
+        duplicates.append(num)
+
+print(duplicates)
+```
+
+**Output:**
+
+```text
+[2, 3]
+```
+
+---
+
+## 16. Linear Search
+
+```python
+arr = [10, 20, 30, 40, 50]
+target = 40
+
+for i in range(len(arr)):
+    if arr[i] == target:
+        print("Element found at index", i)
+        break
+else:
+    print("Element not found")
+```
+
+**Output:** `Element found at index 3`
+
+**Time Complexity:** `O(n)`
+
+---
+
+## 17. Binary Search
+
+```python
+arr = [10, 20, 30, 40, 50]
+target = 40
+
+left = 0
+right = len(arr) - 1
+
+while left <= right:
+    mid = (left + right) // 2
+
+    if arr[mid] == target:
+        print("Found at index", mid)
+        break
+    elif arr[mid] < target:
+        left = mid + 1
+    else:
+        right = mid - 1
+else:
+    print("Not Found")
+```
+
+**Output:** `Found at index 3`
+
+**Time Complexity:** `O(log n)`
+
+---
+
+## 18. Swap Two Numbers
+
+```python
+a = 10
+b = 20
+
+a, b = b, a
+
+print(a)
+print(b)
+```
+
+**Output:**
+
+```text
+20
+10
+```
+
+---
+
+## 19. Factorial of a Number
+
+```python
+n = 5
+
+factorial = 1
+
+for i in range(1, n + 1):
+    factorial *= i
+
+print(factorial)
+```
+
+**Output:** `120`
+
+---
+
+## 20. Fibonacci Series
+
+```python
+n = 8
+
+a = 0
+b = 1
+
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+```
+
+**Output:**
+
+```text
+0 1 1 2 3 5 8 13
+```
+
+---
+
+## 21. Check Prime Number
+
+```python
+n = 7
+
+if n < 2:
+    print("Not Prime")
+else:
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            print("Not Prime")
+            break
+    else:
+        print("Prime")
+```
+
+**Output:** `Prime`
+
+---
+
+## 22. Reverse a Number
+
+```python
+n = 12345
+
+reverse = 0
+
+while n > 0:
+    digit = n % 10
+    reverse = reverse * 10 + digit
+    n //= 10
+
+print(reverse)
+```
+
+**Output:** `54321`
+
+---
+
+## 23. Check Palindrome Number
+
+```python
+n = 121
+
+original = n
+reverse = 0
+
+while n > 0:
+    digit = n % 10
+    reverse = reverse * 10 + digit
+    n //= 10
+
+if original == reverse:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+```
+
+**Output:** `Palindrome`
+
+---
+
+## 24. Sum of Digits
+
+```python
+n = 1234
+
+total = 0
+
+while n > 0:
+    total += n % 10
+    n //= 10
+
+print(total)
+```
+
+**Output:** `10`
+
+---
+
+## 25. Count Digits
+
+```python
+n = 12345
+
+count = len(str(n))
+
+print(count)
+```
+
+**Output:** `5`
+
+---
+
+## 26. Check Palindrome String
+
+```python
+text = "madam"
+
+if text == text[::-1]:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+```
+
+**Output:** `Palindrome`
+
+---
+
+## 27. Reverse a String
+
+```python
+text = "hello"
+
+reverse = text[::-1]
+
+print(reverse)
+```
+
+**Output:** `olleh`
+
+---
+
+## 28. Count Vowels
+
+```python
+text = "education"
+
+vowels = "aeiou"
+count = 0
+
+for char in text:
+    if char in vowels:
+        count += 1
+
+print(count)
+```
+
+**Output:** `5`
+
+---
+
+## 29. Count Characters
+
+```python
+text = "Python"
+
+print(len(text))
+```
+
+**Output:** `6`
+
+---
+
+## 30. Find Duplicate Characters
+
+```python
+text = "programming"
+
+duplicates = []
+
+for char in text:
+    if text.count(char) > 1 and char not in duplicates:
+        duplicates.append(char)
+
+print(duplicates)
+```
+
+**Output:**
+
+```text
+['r', 'g', 'm']
+```
+
+---
+
+## 31. Check Anagram
+
+```python
+text1 = "listen"
+text2 = "silent"
+
+if sorted(text1) == sorted(text2):
+    print("Anagram")
+else:
+    print("Not Anagram")
+```
+
+**Output:** `Anagram`
+
+---
+
+## 32. Implement Stack
+
+```python
+stack = []
+
+stack.append(10)
+stack.append(20)
+stack.append(30)
+
+print(stack)
+
+stack.pop()
+
+print(stack)
+```
+
+**Output:**
+
+```text
+[10, 20, 30]
+[10, 20]
+```
+
+**Principle:** LIFO
+
+---
+
+## 33. Implement Queue
+
+```python
+from collections import deque
+
+queue = deque()
+
+queue.append(10)
+queue.append(20)
+queue.append(30)
+
+print(queue)
+
+queue.popleft()
+
+print(queue)
+```
+
+**Output:**
+
+```text
+deque([10, 20, 30])
+deque([20, 30])
+```
+
+**Principle:** FIFO
+
+---
+
+## 34. Check Balanced Parentheses
+
+```python
+text = "({[]})"
+
+stack = []
+
+pairs = {
+    ')': '(',
+    ']': '[',
+    '}': '{'
+}
+
+balanced = True
+
+for char in text:
+    if char in "([{":
+        stack.append(char)
+    elif char in ")]}":
+        if not stack or stack.pop() != pairs[char]:
+            balanced = False
+            break
+
+if stack:
+    balanced = False
+
+print("Balanced" if balanced else "Not Balanced")
+```
+
+**Output:** `Balanced`
+
+---
+
+## 35. Maximum of Two Numbers
+
+```python
+a = 10
+b = 25
+
+maximum = max(a, b)
+
+print(maximum)
+```
+
+**Output:** `25`
+
+---
+
+## 36. Maximum of Three Numbers
+
+```python
+a = 10
+b = 45
+c = 25
+
+maximum = max(a, b, c)
+
+print(maximum)
+```
+
+**Output:** `45`
+
+---
+
+## 37. Sort an Array
+
+```python
+arr = [5, 2, 8, 1, 3]
+
+arr.sort()
+
+print(arr)
+```
+
+**Output:**
+
+```text
+[1, 2, 3, 5, 8]
+```
+
+---
+
+## 38. Bubble Sort
+
+```python
+arr = [5, 2, 8, 1, 3]
+
+n = len(arr)
+
+for i in range(n):
+    for j in range(0, n - i - 1):
+        if arr[j] > arr[j + 1]:
+            arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+print(arr)
+```
+
+**Output:**
+
+```text
+[1, 2, 3, 5, 8]
+```
+
+**Time Complexity:** `O(n²)`
+
+---
+
+## 39. Find Missing Number
+
+**Question:** An array contains numbers from `1` to `n`, with one number missing.
+
+```python
+arr = [1, 2, 4, 5]
+n = 5
+
+expected_sum = n * (n + 1) // 2
+actual_sum = sum(arr)
+
+missing = expected_sum - actual_sum
+
+print(missing)
+```
+
+**Output:** `3`
+
+---
+
+## 40. Find Common Elements
+
+```python
+arr1 = [1, 2, 3, 4]
+arr2 = [3, 4, 5, 6]
+
+common = list(set(arr1) & set(arr2))
+
+print(common)
+```
+
+**Output:**
+
+```text
+[3, 4]
+```
+
+# Level 1 Concepts Covered
+
+1. Arrays
+2. Strings
+3. Searching
+4. Sorting
+5. Numbers
+6. Stack
+7. Queue
+8. Hashing basics
+9. Frequency counting
+10. Palindromes
+11. Anagrams
+12. Basic recursion concepts
+13. Basic problem solving
+14. Time complexity
+15. Space complexity

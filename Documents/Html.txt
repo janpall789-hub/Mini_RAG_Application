@@ -1,0 +1,360 @@
+HTML5 - Web Content Markup Language
+
+1. Semantic HTML elements
+Semantic elements clearly describe their meaning to both the browser and the developer (e.g., <header>, <nav>, <article>, <section>, <footer>). They improve SEO and accessibility.
+
+2. Web Accessibility (WCAG & ARIA)
+Accessible Rich Internet Applications (ARIA) attributes help communicate state and purpose to screen readers when standard semantic HTML is insufficient.
+
+3. Canvas vs SVG
+- SVG: Vector-based, DOM-accessible, scales smoothly without pixelation, suited for diagrams and icons.
+- Canvas: Raster/pixel-based, rendered programmatically via JavaScript, ideal for graphics-intensive applications and high-frame-rate rendering.
+
+HTML5 – Web Content Markup Language
+How to Style Fonts with HTML5: Step-by-Step Guide for Students
+
+HTML5 (HyperText Markup Language 5) is the standard markup language used to structure content on modern websites. HTML5 defines elements such as headings, paragraphs, links, images, buttons, forms, tables, and sections. HTML creates the structure, while CSS controls the visual appearance, including fonts.
+
+As a frontend developer, students should learn an important rule: use HTML for meaning and structure, and CSS for styling. Although HTML has older tags such as <font>, the <font> element is obsolete and should not be used in modern HTML5 projects.
+
+
+
+1. Create Your First HTML5 File
+
+Create a file named:
+
+index.html
+
+Start with the basic HTML5 structure:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Styling</title>
+</head>
+
+<body>
+
+    <h1>Welcome to HTML5</h1>
+    <p>This is my first webpage.</p>
+
+</body>
+</html>
+
+Change Font Size Using CSS
+
+HTML provides the content, while CSS changes its appearance.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Font Example</title>
+
+    <style>
+        p {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Hello Students!</p>
+
+</body>
+</html>
+
+The font-size property controls the size of the text.
+
+3. Change Font Family
+
+You can specify which font should be used.
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+</style>
+
+You can also use a font stack:
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+If Arial is unavailable, the browser tries Helvetica and then another sans-serif font.
+
+4. Make Text Bold
+
+For semantic importance, use <strong>:
+
+<p>This is <strong>important text</strong>.</p>
+
+You can also control visual weight using CSS:
+
+p {
+    font-weight: bold;
+}
+
+As a professional developer, prefer <strong> when the content is actually important rather than using HTML only for visual styling.
+
+5. Italic Text
+
+Use <em> when you want to emphasize text:
+
+<p>This is <em>important information</em>.</p>
+
+For purely visual styling:
+
+p {
+    font-style: italic;
+}
+6. Change Font Color
+
+Use the CSS color property:
+
+<p class="message">Welcome to Web Development!</p>
+
+<style>
+    .message {
+        color: blue;
+    }
+</style>
+
+You can use color names, hexadecimal values, RGB, HSL, and other CSS color formats.
+
+7. Complete Font Styling Example
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Font Practice</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: darkblue;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .highlight {
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Learn HTML5</h1>
+
+    <p>
+        HTML5 provides the structure of a webpage.
+    </p>
+
+    <p class="highlight">
+        Practice coding every day!
+    </p>
+
+</body>
+</html>
+8. Professional Guidance for Students
+
+When learning frontend development, follow this order:
+
+HTML5 → CSS3 → JavaScript → Responsive Design → Git/GitHub → APIs → Frontend Frameworks
+
+Start by mastering HTML elements and semantic structure. Then learn CSS properties such as:
+
+font-family
+font-size
+font-weight
+font-style
+line-height
+letter-spacing
+text-align
+text-decoration
+color
+
+After learning the basics, students should build small projects such as a personal profile page, portfolio, login page, landing page, and responsive website.
+
+Important Professional Tip
+
+Do not use:
+
+<font size="5" color="red">Hello</font>
+
+The <font> element is obsolete in modern HTML. Instead, use:
+
+<p class="title">Hello</p>
+
+<style>
+    .title {
+        font-size: 30px;
+        color: red;
+    }
+</style>
+
+This separation of HTML structure + CSS presentation is a fundamental frontend development practice.
+
+all txt in one page 
+
+If you mean all the .txt content/files in one single page/document, I can combine everything into one consolidated text document.
+
+For your ingestion-pipeline demonstration, I can structure it like:
+
+DBMS
+Python
+Java
+HTML5
+CSS3
+JavaScript
+Generative AI
+Machine Learning
+Advanced Coding Questions & Answers
+DSA Levels 1–3
+
+Each section will have a clear heading, so the entire dataset is available in one .txt file/page and can be directly used for ingestion/RAG testing.
+
+not this html content 
+
+Got it 👍 You mean HTML content only, and you want all the HTML/font information on one page.
+
+Here is a single-page HTML example:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML5 Font Guide</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: darkblue;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: darkgreen;
+        }
+
+        .large {
+            font-size: 30px;
+        }
+
+        .small {
+            font-size: 14px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .custom-font {
+            font-family: Georgia, serif;
+            font-size: 24px;
+        }
+
+        .colored {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML5 - Web Content Markup Language</h1>
+
+    <h2>How to Change Font in HTML</h2>
+
+    <p>
+        HTML is used to create the structure of a webpage.
+        CSS is used to control fonts, colors, sizes, spacing and layouts.
+    </p>
+
+    <h2>1. Change Font Size</h2>
+
+    <p class="large">This is large text.</p>
+    <p class="small">This is small text.</p>
+
+    <h2>2. Change Font Family</h2>
+
+    <p class="custom-font">
+        This text uses the Georgia font.
+    </p>
+
+    <h2>3. Make Text Bold</h2>
+
+    <p class="bold">
+        This is bold text.
+    </p>
+
+    <h2>4. Make Text Italic</h2>
+
+    <p class="italic">
+        This is italic text.
+    </p>
+
+    <h2>5. Change Font Color</h2>
+
+    <p class="colored">
+        This text is red.
+    </p>
+
+    <h2>6. Combine Font Properties</h2>
+
+    <p style="
+        font-family: Arial;
+        font-size: 25px;
+        font-weight: bold;
+        font-style: italic;
+        color: purple;
+    ">
+        This text uses multiple font properties.
+    </p>
+
+    <h2>Important Student Guidance</h2>
+
+    <ul>
+        <li>HTML creates webpage structure.</li>
+        <li>CSS controls font styling.</li>
+        <li>Use CSS instead of the old &lt;font&gt; tag.</li>
+        <li>Learn font-size, font-family, font-weight and font-style.</li>
+        <li>Practice by creating headings, paragraphs and buttons.</li>
+    </ul>
+
+</body>
+</html>
+
+Important: Don't use the old <font> tag like:
+
+<font size="5" color="red">Hello</font>
+
+Instead, use CSS, because that is the modern HTML5 approach.

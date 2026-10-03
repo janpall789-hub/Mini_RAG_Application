@@ -1,0 +1,195 @@
+CSS3 - Modern Styling and Layouts
+
+1. CSS Layout Models: Flexbox vs CSS Grid
+- Flexbox: One-dimensional layout system (designed for rows OR columns).
+- CSS Grid: Two-dimensional layout system (designed for rows AND columns simultaneously).
+
+2. CSS Custom Properties (Variables)
+CSS variables allow storing specific values for reuse throughout a stylesheet, enabling dynamically scoped updates via JavaScript.
+
+3. Responsive Web Design & Media Queries
+Utilizing fluid grids, flexible images, and `@media` queries ensures optimal display across diverse screen sizes and device types.
+
+# CSS3 – Modern Styling and Layouts
+
+**CSS3 (Cascading Style Sheets Level 3)** is the modern evolution of CSS used to design and style web pages. While **HTML** provides the structure of a webpage, CSS3 controls its appearance, layout, colors, spacing, animations, and responsiveness. CSS3 makes websites more attractive, interactive, and adaptable to different screen sizes.
+
+## 1. CSS3 Syntax
+
+A CSS rule contains a **selector**, **property**, and **value**.
+
+```css
+h1 {
+    color: blue;
+    font-size: 32px;
+}
+```
+
+Here, `h1` is the selector, `color` and `font-size` are properties, and `blue` and `32px` are values.
+
+## 2. CSS Selectors
+
+Selectors determine which HTML elements receive styles.
+
+Common selectors include:
+
+* **Element selector:** `p`
+* **Class selector:** `.box`
+* **ID selector:** `#header`
+* **Universal selector:** `*`
+* **Attribute selector:** `input[type="text"]`
+* **Pseudo-class:** `button:hover`
+* **Pseudo-element:** `p::first-letter`
+
+Example:
+
+```css
+.card {
+    padding: 20px;
+    border-radius: 10px;
+}
+```
+
+## 3. Colors and Backgrounds
+
+CSS3 provides several ways to define colors, including names, HEX, RGB, RGBA, HSL, and HSLA.
+
+```css
+body {
+    background-color: #f5f5f5;
+}
+
+.card {
+    background: white;
+}
+```
+
+Background images, gradients, positioning, and sizing can also be controlled using CSS.
+
+## 4. Box Model
+
+Every HTML element can be considered as a box consisting of:
+
+**Content → Padding → Border → Margin**
+
+```css
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 10px;
+}
+```
+
+Understanding the box model is essential for creating accurate layouts.
+
+## 5. Flexbox
+
+**Flexbox** is a modern one-dimensional layout system. It is useful for arranging elements horizontally or vertically.
+
+```css
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+```
+
+Important Flexbox properties include:
+
+* `display: flex`
+* `flex-direction`
+* `justify-content`
+* `align-items`
+* `flex-wrap`
+* `gap`
+* `flex-grow`
+* `flex-shrink`
+
+Flexbox is commonly used for navigation bars, cards, buttons, and responsive components.
+
+## 6. CSS Grid
+
+**CSS Grid** is a two-dimensional layout system that works with rows and columns.
+
+```css
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+```
+
+Grid is particularly useful for dashboards, galleries, product layouts, and complex page structures.
+
+## 7. Responsive Design
+
+Responsive design allows a website to adapt to different screen sizes such as desktops, tablets, and smartphones.
+
+CSS3 uses **media queries**:
+
+```css
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+```
+
+Modern responsive designs commonly use flexible units such as `%`, `rem`, `em`, `vw`, and `vh`.
+
+## 8. Transitions and Transformations
+
+CSS3 supports smooth visual effects.
+
+```css
+button {
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+```
+
+Common transformations include `scale()`, `rotate()`, `translate()`, and `skew()`.
+
+## 9. Animations
+
+CSS3 animations allow elements to change styles over time.
+
+```css
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}
+
+.box {
+    animation: move 2s infinite alternate;
+}
+```
+
+## 10. Modern CSS Features
+
+Modern CSS includes powerful features such as **CSS variables, gradients, shadows, `calc()`, `min()`, `max()`, `clamp()`, filters, aspect ratios, and container queries**.
+
+CSS variables allow reusable values:
+
+```css
+:root {
+    --main-color: blue;
+}
+
+button {
+    background: var(--main-color);
+}
+```
+
+## Conclusion
+
+CSS3 is essential for modern web development. It provides powerful tools for **styling, responsive layouts, Flexbox, Grid, animations, transitions, transformations, and reusable design systems**. When combined with HTML and JavaScript, CSS3 helps developers create responsive, interactive, and visually appealing web applications.
